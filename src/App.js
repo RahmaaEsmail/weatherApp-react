@@ -20,7 +20,7 @@ function Weather() {
   async function fetchData() {
   
     setIsLoading(true)
-    const res = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=8aa3007400d94c1487562047232608&q=${country}&days=7`);    
+    const res = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=8aa3007400d94c1487562047232608&q=${country}&days=7`);    
     const data = await res.json();
     setLocation(data.location)
     setWeather(data.forecast.forecastday);
