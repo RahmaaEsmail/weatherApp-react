@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 2rem;
+  color: #222;
+  width: 100%;
+  height: 100%;
+  background-color: #eabfb9;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  overflow-x: hidden;
+  padding: 40px 20px;
+  margin: auto;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  margin: 0 auto;
+  gap: 2rem;
+  padding: 4rem;
+  border: 2px solid #222;
+  outline: 2px solid #222;
+  outline-offset: 1.2rem;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 6rem;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+input {
+  font-family: inherit;
+  color: inherit;
+  font-size: 2rem;
+  background-color: #f0d2ce;
+  padding: 1.6rem 3.2rem;
+  border: none;
+  width: 32rem;
+}
+
+
+input:focus {
+  outline: 2px solid #222;
+}
+
+.weather {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* grid-template-columns: repeat(7,1fr); */
+  gap: 2.4rem;
+}
+
+
+.day {
+  background-color: #f0d2ce;
+  padding: 1.6rem 0 2rem;
+  width: 12.8rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  cursor: pointer;
+}
+
+.day span {
+  font-size: 5.2rem;
+}
+
+.day.important {
+  background-color: #ecc5c0;
+  outline: 2px solid #222;
+}
+
+.loader {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+button {
+  border: 1px solid white;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+@media (max-width:420px) {
+  input {
+    width: 28rem;
+  }
+}
+
+@media (max-width:405px) {
+  .day {
+    width: 100%;
+  }
+
+  input {
+    width: 25rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+}
